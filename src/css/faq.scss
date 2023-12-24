@@ -1,0 +1,20 @@
+#faq {
+    .accordion-container .accordion-title::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-top-color: #000000;
+    }
+
+    .accordion-container .accordion-title.open::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        border: 8px solid transparent;
+        border-bottom-color: #000000;
+    }
+}

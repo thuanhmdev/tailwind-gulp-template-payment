@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// font import
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+
+@import "lib/owl.carousel.min.scss";
+@import "lib/owl.theme.default.min.scss";
+@import "lib/owl.theme.green.min.scss";
+@import "lib/remixicon.min.scss";
+@import "banner.scss";
+@import "cardprice.scss";
+@import "faq.scss";
+@import "gallery.scss";
+@import "navbar.scss";
+
+
+body {
+    overflow-x: hidden;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.loaded .loader-container {
+    display: none;
+}

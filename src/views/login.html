@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="js/scripts.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.1/fonts/remixicon.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Login</title>
+  </head>
+
+  <body>
+    @include('./components/preloader.html')
+    @include('./layouts/login/navbar.html')
+    @include('./layouts/login/login_form.html')
+    @include('./layouts/login/footer.html')
+  </body>
+</html>
+<script>
+  // window.addEventListener("load", (event) => {
+  window.addEventListener("load", (event) => {
+    $(".js-password-toggle").on("click", function () {
+      var passwordInput = $(".js-password");
+
+      if (passwordInput.attr("type") === "password") {
+        passwordInput.attr("type", "text");
+        $(".js-password-label").html('<i class="ri-eye-off-line"></i>');
+      } else {
+        passwordInput.attr("type", "password");
+        $(".js-password-label").html('<i class="ri-eye-line"></i>');
+      }
+    });
+  });
+</script>

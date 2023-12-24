@@ -1,0 +1,136 @@
+<section
+  id="checkout"
+  class="animation-fade-in grow min-h-[calc(100vh_-_5rem)]"
+  style="
+    background: url('img/bg_packages.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="container space-y-10">
+    <div class="rounded mx-auto">
+      <!-- Tabs -->
+      <ul id="tabs" class="inline-flex pt-2 px-1 w-full border-b border-white">
+        <li
+          class="hover:opacity-80 bg-white px-4 text-gray-800 font-semibold py-2 rounded-t border-t border-r border-l"
+        >
+          <a id="default-tab" href="#first">General info</a>
+        </li>
+        <li
+          class="hover:opacity-80 px-4 text-gray-800 font-semibold py-2 rounded-t"
+        >
+          <a href="history_payment.html">History pay</a>
+        </li>
+        <li
+          class="hover:opacity-80 px-4 text-gray-800 font-semibold py-2 rounded-t"
+        >
+          <a href="history_service.html">History detail service</a>
+        </li>
+      </ul>
+
+      <div id="tab-contents" class="py-4 w-3/4 mx-auto">
+        <h1 class="text-center text-5xl font-bold text-blue-700">
+          User profile
+        </h1>
+        <form class="flex flex-col lg:flex-row py-24 space-y-10 items-center">
+          <div class="w-full lg:w-2/6 flex flex-col items-center">
+            <div
+              id="avatar"
+              class="relative border-4 border-white w-[150px] h-[150px] lg:w-[210px] lg:h-[210px] rounded-full"
+              style="
+                background-image: url('img/avatar.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              "
+            >
+              <div
+                class="absolute w-[30px] h-[30px] top-[5%] right-[10%] bg-gray-100 rounded-[50%] flex items-center justify-center hover:scale-110"
+                id="btn_trigger_remove_avatar"
+              >
+                <i class="ri-close-line text-3xl text-red-600"></i>
+              </div>
+            </div>
+
+            <input type="file" class="hidden" name id="input_avatar" />
+            <a
+              type="button"
+              id="btn_trigger_avatar"
+              class="hover:opacity-80 py-2 px-4 mt-3 bg-blue-500 rounded-lg text-white font-semibold"
+            >
+              Upload avatar
+            </a>
+          </div>
+          <div class="w-full lg:w-4/6 text-base space-y-10">
+            <div class="flex items-center">
+              <span class="text-gray-600 w-2/5 lg:w-1/4">Your name:</span>
+              <!-- <span class="font-semibold">ThuanHM</span> -->
+              <input
+                type="text"
+                id="name"
+                placeholder="Name"
+                autofocus
+                value="Thuan Dap Troai"
+                class="px-4 py-2 transition duration-300 w-full border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+              />
+            </div>
+            <div class="flex items-center">
+              <span class="text-gray-600 w-2/5 lg:w-1/4">Your email:</span>
+              <!-- <span class="font-semibold">Thuandaptroai@gmail.com</span> -->
+              <input
+                type="text"
+                id="email"
+                placeholder="Email"
+                autofocus
+                readonly
+                value="Thuandaptroai@gmail.com"
+                class="px-4 py-2 transition duration-300 w-full border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+              />
+            </div>
+            <div class="flex items-center">
+              <span class="text-gray-600 w-2/5 lg:w-1/4">Your phone:</span>
+              <!-- <span class="font-semibold">1112223334</span> -->
+              <input
+                type="text"
+                id="phone"
+                placeholder="Phone"
+                autofocus
+                value="1112223334"
+                class="px-4 py-2 transition duration-300 w-full border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+              />
+            </div>
+            <div class="flex items-center">
+              <span class="text-gray-600 w-2/5 lg:w-1/4">Your company:</span>
+              <!-- <span class="font-semibold">APAC Tech</span> -->
+              <input
+                type="text"
+                id="company"
+                placeholder="Company"
+                autofocus
+                value="APAC Tech"
+                class="px-4 py-2 transition duration-300 w-full border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+              />
+            </div>
+            <div
+              class="w-full flex flex-col md:flex-row justify-end gap-y-4 gap-x-2"
+            >
+              <a
+                href="#"
+                type="button"
+                class="hover:opacity-80 py-2 px-4 bg-blue-500 text-white rounded-lg font-semibold text-center"
+                >Change password</a
+              >
+              <a
+                href="#"
+                type="button"
+                class="hover:opacity-80 py-2 px-4 bg-blue-500 text-white rounded-lg font-semibold text-center"
+                >Save change</a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

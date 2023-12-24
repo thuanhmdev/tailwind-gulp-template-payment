@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.1/fonts/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="js/scripts.js"></script>
+    <title>Home page</title>
+  </head>
+
+  <body>
+    <div class="loader-container fixed h-screen w-screen flex justify-center items-center bg-white z-[100]">
+    <div class="w-24 h-24 rounded-full animate-spin border-4 border-blue-500 border-t-transparent"></div>
+</div>
+    <header class="sticky top-0 z-10 bg-white">
+  <div
+    class="container header-wrapper h-[5rem] flex justify-between items-center"
+  >
+    <a href="#"
+      ><img src="img/wallet-logo.png" class="w-[40px]" alt="logo" class="logo"
+    /></a>
+
+    <input type="checkbox" id="check" class="hidden" />
+    <label for="check" class="icons">
+      <i class="ri-menu-line text-neutral-900" id="menu-icon"></i>
+      <i class="ri-close-line text-neutral-900" id="close-icon"></i>
+    </label>
+
+    <nav class="navbar pl-12 md:pl-0">
+      <a
+        href="#"
+        class="relative active-item nav-item ml-7 hover:text-blue-500 font-medium text-neutral-900"
+        style="--i: 0"
+        >Packages</a
+      >
+      <a
+        href="#"
+        class="relative nav-item ml-7 hover:text-blue-500 font-medium text-neutral-900"
+        style="--i: 1"
+        >Contact</a
+      >
+      <a
+        href="#"
+        class="relative nav-item ml-7 hover:text-blue-500 font-medium text-neutral-900"
+        style="--i: 2"
+        >Check SN</a
+      >
+      <a
+        tabindex="0"
+        class="relative nav-item ml-7 group md:text-start relative inline-block"
+      >
+        <div class="flex cursor-pointer">
+          <button
+            class="w-9 h-9 relative rounded-full bg-red-500 text-xl text-white uppercase"
+          >
+            TL
+          </button>
+          <div class="flex flex-col ml-2">
+            <span class="text-gray-500 text-xs">Welcome</span>
+            <span class="text-base">Alan</span>
+          </div>
+        </div>
+
+        <ul
+          class="hidden mt-2 group-focus-within:block list-none absolute bg-gray-50 w-36 rounded-lg z-[25] shadow-lg left-[10px] md:left-[0]"
+        >
+          <li
+            class="py-3 px-3 cursor-pointer hover:bg-gray-200 hover:rounded-lg"
+          >
+            Profile
+          </li>
+          <li
+            class="py-3 px-3 cursor-pointer hover:bg-gray-200 hover:rounded-lg"
+          >
+            History
+          </li>
+          <li
+            class="py-3 px-3 cursor-pointer hover:bg-gray-200 hover:rounded-lg"
+          >
+            Logout
+          </li>
+        </ul>
+      </a>
+      <!-- <a href="#" class="nav-item" style="--i: 3">Login</a> -->
+    </nav>
+  </div>
+</header>
+
+
+    <section id="banner" class="min-h-[calc(100vh_-_5rem)]">
+  <div class="owl-carousel owl-theme">
+    <div
+      class="banner-item w-auto min-h-[calc(100vh_-_5rem)] text-3xl text-neutral-50 flex items-center"
+      style="
+        background-image: url('img/bg-banner-1.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="w-full container mx-auto relative z-[15] space-y-6">
+        <h3 class="text-6xl banner-title">Title 1</h3>
+        <a
+          type="button"
+          href="#contact-us"
+          class="btn light px-4 py-2 text-base border-2 border-blue-600 text-neutral-50 hover:bg-blue-600 hover:text-neutral-50 font-semibold"
+        ></a>
+      </div>
+    </div>
+    <div
+      class="banner-item w-auto min-h-[calc(100vh_-_5rem)] text-3xl text-neutral-50 flex items-center"
+      style="
+        background-image: url('img/bg-banner-1.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="w-full container mx-auto relative z-[15] space-y-6">
+        <h3 class="text-6xl banner-title">Title 2</h3>
+
+        <a
+          type="button"
+          href="#contact-us"
+          class="btn light px-4 py-2 text-base border-2 border-blue-600 text-neutral-50 hover:bg-blue-600 hover:text-neutral-50 font-semibold"
+        ></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="service" class="py-16 bg-blue-50">
+  <div class="container mx-auto space-y-10">
+    <h2 class="animation-fade-in text-3xl lg:text-5xl font-bold mb-0 text-blue-700 text-center">
+      Services
+    </h2>
+    <div class="flex flex-wrap justify-evenly lg:justify-stretch gap-y-10">
+      <div class="animation-fade-in sm:w-1/2 md:w-1/3 flex justify-center">
+        <div
+          class="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 flex flex-col items-center justify-center rounded-full bg-blue-100 p-10">
+          <i class="ri-global-line text-3xl lg:text-5xl text-center"></i>
+
+          <p class="mb-0 text-xs md:text-base text-center">
+            The world's payment method
+          </p>
+        </div>
+      </div>
+      <div class="animation-fade-in sm:w-1/2 md:w-1/3 flex justify-center">
+        <div
+          class="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 flex flex-col items-center justify-center rounded-full bg-blue-100 p-10">
+          <i class="ri-global-line text-3xl lg:text-5xl text-center"></i>
+          <p class="mb-0 text-xs md:text-base text-center">
+            Retains the most APM's
+          </p>
+        </div>
+      </div>
+      <div class="animation-fade-in sm:w-1/2 md:w-1/3 flex justify-center">
+        <div
+          class="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 flex flex-col items-center justify-center rounded-full bg-blue-100 p-10">
+          <i class="ri-global-line text-3xl lg:text-5xl text-center"></i>
+          <p class="mb-0 text-xs md:text-base text-center">
+            Local currency payment
+          </p>
+        </div>
+      </div>
+      <div class="animation-fade-in sm:w-1/2 md:w-1/3 flex justify-center">
+        <div
+          class="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 flex flex-col items-center justify-center rounded-full bg-blue-100 p-10">
+          <i class="ri-global-line text-3xl lg:text-5xl text-center"></i>
+          <p class="mb-0 text-xs md:text-base text-center">
+            Integrated settlement of franchisees
+          </p>
+        </div>
+      </div>
+      <div class="animation-fade-in sm:w-1/2 md:w-1/3 flex justify-center">
+        <div
+          class="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 flex flex-col items-center justify-center rounded-full bg-blue-100 p-10">
+          <i class="ri-global-line text-3xl lg:text-5xl text-center"></i>
+          <p class="mb-0 text-xs md:text-base text-center">
+            Integrated settlement of franchisees
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section
+  id="40allery"
+  class="bg-blue-50 py-16"
+  style="
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('img/bg_gallery.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  "
+>
+  >
+  <div class="container mx-auto space-y-10">
+    <!-- <h2
+      class="animation-fade-in text-3xl lg:text-5xl font-bold mb-0 text-blue-500 text-center"
+    >
+      Gallery image
+    </h2> -->
+    <div class="list-img flex flex-wrap justify-around gap-10">
+      <div
+        style="
+          background: url('https://picsum.photos/id/40/300/200');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="animation-fade-in image-item w-[167px] h-[167px] md:w-[267px] md:h-[267px] rounded-lg shadow-xl"
+      ></div>
+      <div
+        style="
+          background: url('https://picsum.photos/id/41/300/200');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="animation-fade-in image-item w-[167px] h-[167px] md:w-[267px] md:h-[267px] rounded-lg shadow-xl"
+      ></div>
+      <div
+        style="
+          background: url('https://picsum.photos/id/42/300/200');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="animation-fade-in image-item w-[167px] h-[167px] md:w-[267px] md:h-[267px] rounded-lg shadow-xl"
+      ></div>
+      <div
+        style="
+          background: url('https://picsum.photos/id/43/300/200');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="animation-fade-in image-item w-[167px] h-[167px] md:w-[267px] md:h-[267px] rounded-lg shadow-xl"
+      ></div>
+      <div
+        style="
+          background: url('https://picsum.photos/id/44/300/200');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="animation-fade-in image-item w-[167px] h-[167px] md:w-[267px] md:h-[267px] rounded-lg shadow-xl"
+      ></div>
+      <div
+        style="
+          background: url('https://picsum.photos/id/45/300/200');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="animation-fade-in image-item w-[167px] h-[167px] md:w-[267px] md:h-[267px] rounded-lg shadow-xl"
+      ></div>
+
+      <div
+        style="
+          background: url('https://picsum.photos/id/48/300/200');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="animation-fade-in image-item w-[167px] h-[167px] md:w-[267px] md:h-[267px] rounded-lg shadow-xl"
+      ></div>
+      <div
+        style="
+          background: url('https://picsum.photos/id/49/300/200');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="animation-fade-in image-item w-[167px] h-[167px] md:w-[267px] md:h-[267px] rounded-lg shadow-xl"
+      ></div>
+    </div>
+  </div>
+</section>
+
+    <section id="about" class="py-16">
+  <div class="container mx-auto space-y-10">
+    <h2
+      class="animation-fade-in text-3xl lg:text-5xl font-bold mb-0 text-blue-700 text-center"
+    >
+      About Us
+    </h2>
+    <div class="flex flex-col-reverse gap-y-6 lg:flex-row justify-center">
+      <div class="w-full lg:w-3/5 text-neutral-900 space-y-10 2xl:px-0">
+        <h3 class="animation-fade-in text-2xl font-semibold">Our Company</h3>
+        <p class="animation-fade-in text-sm text-neutral-700 mb-0">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.PageMaker including versions
+          of Lorem Ipsum.
+        </p>
+        <p class="animation-fade-in text-sm text-neutral-700 mb-0">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged like Aldus PageMaker including
+          versions of Lorem Ipsum.
+        </p>
+        <a
+          type="button"
+          href="#contact"
+          class="animation-fade-in px-4 py-2 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-neutral-50 font-semibold"
+          >Contact Us</a
+        >
+      </div>
+      <div
+        class="animation-fade-in w-full lg:w-2/5 justify-center flex lg:justify-end"
+      >
+        <img
+          src="img/about-img.jpg"
+          class="rounded-lg w-[250px] height-[250px] md:w-[333px] md:height-[333px]"
+          height="auto"
+          alt="our-company"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+ <section id="faq" class="bg-blue-50 py-16">
+  <div class="w-full container mx-auto space-y-10">
+    <h2
+      class="animation-fade-in text-3xl lg:text-5xl font-bold mb-0 text-blue-700 text-center"
+    >
+      FAQs
+    </h2>
+    <p class="animation-fade-in text-base text-center">
+      The most common questions about how our business works and what can do for
+      you.
+    </p>
+    <div
+      id="accordion"
+      class="accordion-container text-neutral-900 w-full space-y-4"
+    >
+      <div class="animation-fade-in border-2 px-4 py-3">
+        <h4
+          class="cursor-pointer accordion-title ralative js-accordion-title relative pointer text-lg font-medium"
+        >
+          Question 2
+        </h4>
+        <div class="accordion-content py-2 hidden">
+          <p>Accordion Content1</p>
+        </div>
+      </div>
+
+      <div class="animation-fade-in border-2 px-4 py-3">
+        <h4
+          class="cursor-pointer accordion-title ralative js-accordion-title relative pointer text-lg font-medium"
+        >
+          Question 3
+        </h4>
+        <div class="accordion-content py-2 hidden">
+          <p>Accordion Content1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="py-16">
+  <div class="container mx-auto space-y-6">
+    <h2
+      class="animation-fade-in text-3xl lg:text-5xl font-bold mb-0 text-blue-700 text-center"
+    >
+      Contact us
+    </h2>
+    <div class="animation-fade-in">
+      <p class="leading-relaxed text-base text-center">
+        We are here for you 24/7.
+      </p>
+      <p class="text-base text-center">
+        Our Customer Success Team is called that way for a reason.
+      </p>
+    </div>
+    <form class="grid gap-6 grid-cols-2 md:w-2/3 mx-auto">
+      <div class="animation-fade-in">
+        <label for="name" class="block mb-2 text-base font-medium text-gray-900"
+          >Your Name</label
+        >
+        <input
+          type="name"
+          id="name"
+          placeholder="Name"
+          class="px-4 py-2 transition duration-300 w-full border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+        />
+      </div>
+      <div class="animation-fade-in">
+        <label
+          for="email"
+          class="block mb-2 text-base font-medium text-gray-900"
+          >Email Email</label
+        >
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          class="px-4 py-2 transition duration-300 w-full border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+        />
+      </div>
+      <div class="animation-fade-in">
+        <label
+          for="company"
+          class="block mb-2 text-base font-medium text-gray-900"
+          >Your Company</label
+        >
+        <input
+          type="name"
+          id="company"
+          placeholder="Company"
+          class="px-4 py-2 transition duration-300 w-full border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+        />
+      </div>
+      <div class="animation-fade-in">
+        <label
+          for="phone"
+          class="block mb-2 text-base font-medium text-gray-900"
+          >Your Phone</label
+        >
+        <input
+          type="name"
+          id="phone"
+          placeholder="Phone"
+          class="px-4 py-2 transition duration-300 w-full border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+        />
+      </div>
+      <div class="col-span-2 animation-fade-in">
+        <label
+          for="message"
+          class="block mb-2 text-base font-medium text-gray-900"
+          >Your Message</label
+        >
+        <textarea
+          rows="3"
+          id="message"
+          placeholder="Message"
+          class="px-4 py-2 transition duration-300 w-full border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+        ></textarea>
+      </div>
+      <div class="animation-fade-in col-span-2 flex justify-center">
+        <a
+          href="#"
+          class="rounded-full bg-blue-500 px-16 py-3 text-neutral-50 hover:opacity-80"
+          >Send</a
+        >
+      </div>
+    </form>
+  </div>
+</section>
+
+    <footer class="bg-blue-50">
+  <div class="container mx-auto py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+      <div class>
+        <h3 class="text-neutral-900 text-2xl mb-4">
+          19K users are using FWR blocks and making their life easy.
+        </h3>
+        <p class="text-neutral-900">
+          We have carefully crafted the blocks to suit to everyone's need.
+        </p>
+        <div class="flex xl:justify-start mt-4">
+          <a
+            href
+            class="group w-9 h-9 border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-neutral-900 hover:bg-blue-700 hover:border-blue-600"
+          >
+            <i
+              class="ri-facebook-circle-fill text-neutral-900 group-hover:text-white"
+            ></i>
+          </a>
+          <a
+            href
+            class="group w-9 h-9 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-neutral-900 hover:bg-slate-900 hover:border-blue-400"
+          >
+            <i
+              class="ri-twitter-x-line text-neutral-900 group-hover:text-white"
+            ></i>
+          </a>
+
+          <a
+            href
+            class="group w-9 h-9 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-neutral-900 hover:bg-red-600 hover:border-red-600"
+          >
+            <i
+              class="ri-youtube-line text-neutral-900 group-hover:text-white"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class>
+        <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+        </ul>
+      </div>
+      <div class>
+        <h3 class="text-xl font-bold mb-6">Contact Us</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+        </ul>
+      </div>
+      <div class>
+        <h3 class="text-xl font-bold mb-6">Contact Us</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+          <li><a href="#" class="hover:underline">item 1</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-base border-t-[1px] border-blue-600 text-sm">
+    <div class="container mx-auto">
+      <div class="md:flex md:-mx-4 md:items-center">
+        <div class="md:flex-1 md:px-4 text-center md:text-left">
+          <!-- <p class="text-neutral-900">&copy; <strong>FWR</strong></p> -->
+          <span class="text-neutral-900"
+            >Copyright &copy; 2020 IP Supply Australia All rights reserved</span
+          >
+        </div>
+        <div class="md:flex-1 md:px-4 text-center md:text-right">
+          <a
+            href="#"
+            class="py-2 px-4 text-neutral-900 inline-block hover:underline"
+            >Terms of Service</a
+          >
+          <a
+            href="#"
+            class="py-2 px-4 text-neutral-900 inline-block hover:underline"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

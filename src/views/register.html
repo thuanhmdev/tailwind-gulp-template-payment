@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="js/scripts.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.1/fonts/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <title>Register</title>
+  </head>
+
+  <body>
+    @include('./components/preloader.html')
+    @include('./layouts/register/navbar.html')
+    @include('./layouts/register/register_form.html')
+    @include('./layouts/register/footer.html')
+  </body>
+</html>
+
+<script>
+  window.addEventListener("load", (event) => {
+    function togglePasswordVisibility(passwordInput, label) {
+      if (passwordInput.attr("type") === "password") {
+        passwordInput.attr("type", "text");
+        label.html('<i class="ri-eye-off-line"></i>');
+      } else {
+        passwordInput.attr("type", "password");
+        label.html('<i class="ri-eye-line"></i>');
+      }
+    }
+    $(".js-old-password-toggle").on("click", function () {
+      var passwordInput = $(".js-old-password");
+      var label = $(".js-old-password-label");
+      togglePasswordVisibility(passwordInput, label);
+    });
+
+    $(".js-new-password-toggle").on("click", function () {
+      var passwordInput = $(".js-new-password");
+      var label = $(".js-new-password-label");
+      togglePasswordVisibility(passwordInput, label);
+    });
+
+    $(".js-confirm-password-toggle").on("click", function () {
+      var passwordInput = $(".js-confirm-password");
+      var label = $(".js-confirm-password-label");
+      togglePasswordVisibility(passwordInput, label);
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener("load", (event) => {
+    $("#btn_trigger_avatar").click(() => {
+      $("#input_avatar").click();
+    });
+
+    $("#input_avatar").change((e) => {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        $("#avatar").css("background-image", "url(" + e.target.result + ")");
+      };
+
+      if (file) {
+        reader.readAsDataURL(file);
+        $("#btn_trigger_remove_avatar").removeClass("hidden");
+        e.target.value = "";
+      }
+    });
+
+    $("#btn_trigger_remove_avatar").click(function () {
+      $("#avatar").css("background-image", "url('img/avatar.png')");
+      $(this).addClass("hidden");
+    });
+
+    //Show #btn_trigger_remove_avatar
+    const currentImage = $("#avatar").css("background-image");
+    if (currentImage.includes("img/avatar.png")) {
+      $("#btn_trigger_remove_avatar").addClass("hidden");
+    }
+  });
+</script>

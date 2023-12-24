@@ -1,0 +1,73 @@
+<header class="sticky top-0 z-10 bg-white">
+  <div
+    class="container header-wrapper h-[5rem] flex justify-between items-center"
+  >
+    <a href="#"
+      ><img src="img/wallet-logo.png" class="w-[40px]" alt="logo" class="logo"
+    /></a>
+
+    <input type="checkbox" id="check" class="hidden" />
+    <label for="check" class="icons">
+      <i class="ri-menu-line text-neutral-900" id="menu-icon"></i>
+      <i class="ri-close-line text-neutral-900" id="close-icon"></i>
+    </label>
+
+    <nav class="navbar pl-12 md:pl-0">
+      <a
+        href="#"
+        class="relative active-item nav-item ml-7 hover:text-blue-500 font-medium text-neutral-900"
+        style="--i: 0"
+        >Packages</a
+      >
+      <a
+        href="#"
+        class="relative nav-item ml-7 hover:text-blue-500 font-medium text-neutral-900"
+        style="--i: 1"
+        >Contact</a
+      >
+      <a
+        href="#"
+        class="relative nav-item ml-7 hover:text-blue-500 font-medium text-neutral-900"
+        style="--i: 2"
+        >Check SN</a
+      >
+      <a
+        tabindex="0"
+        class="relative nav-item ml-7 group md:text-start relative inline-block"
+      >
+        <div class="flex cursor-pointer">
+          <button
+            class="w-9 h-9 relative rounded-full bg-red-500 text-xl text-white uppercase"
+          >
+            TL
+          </button>
+          <div class="flex flex-col ml-2">
+            <span class="text-gray-500 text-xs">Welcome</span>
+            <span class="text-base">Alan</span>
+          </div>
+        </div>
+
+        <ul
+          class="hidden mt-2 group-focus-within:block list-none absolute bg-gray-50 w-36 rounded-lg z-[25] shadow-lg left-[10px] md:left-[0]"
+        >
+          <li
+            class="py-3 px-3 cursor-pointer hover:bg-gray-200 hover:rounded-lg"
+          >
+            Profile
+          </li>
+          <li
+            class="py-3 px-3 cursor-pointer hover:bg-gray-200 hover:rounded-lg"
+          >
+            History
+          </li>
+          <li
+            class="py-3 px-3 cursor-pointer hover:bg-gray-200 hover:rounded-lg"
+          >
+            Logout
+          </li>
+        </ul>
+      </a>
+      <!-- <a href="#" class="nav-item" style="--i: 3">Login</a> -->
+    </nav>
+  </div>
+</header>
